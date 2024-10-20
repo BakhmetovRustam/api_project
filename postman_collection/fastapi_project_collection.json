@@ -1,0 +1,146 @@
+{
+    "info": {
+        "name": "FastAPI Project Collection",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "GET sum1n/{n}",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8000/sum1n/10",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "sum1n",
+                        "10"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "GET fibo?n={n}",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8000/fibo?n=5",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "fibo"
+                    ],
+                    "query": [
+                        {
+                            "key": "n",
+                            "value": "5"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "POST reverse (Header)",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "string",
+                        "value": "hello"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:8000/reverse",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "reverse"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "PUT list (Add Element)",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"element\":\"Apple\"}"
+                },
+                "url": {
+                    "raw": "http://localhost:8000/list",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "list"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "GET list (Get All Elements)",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8000/list",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "list"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "POST calculator (Math Expression)",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"expr\": \"1,+,1\"}"
+                },
+                "url": {
+                    "raw": "http://localhost:8000/calculator",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "calculator"
+                    ]
+                }
+            }
+        }
+    ]
+}
